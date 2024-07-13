@@ -1,7 +1,7 @@
 ### Project #6
 Timeline: 2024.2.23 - 2024.7.8
 
-This is a checkers game with a bot that uses the MiniMax algorithm with alpha-beta pruning to choose the best move, considering how far it had searched. It's the biggest project I've undertaken yet. Here are some things, but not all, that I've learned/improved during this project:
+This is a checkers game with a bot that uses the MiniMax algorithm with alpha-beta pruning to choose the best move, considering how far it has searched. It's the biggest project I've undertaken yet. Here are some things, but not all, that I've learned/improved during this project:
 - Multithreading
 - Templates
 - Concepts
@@ -10,9 +10,10 @@ This is a checkers game with a bot that uses the MiniMax algorithm with alpha-be
 - Lambdas
 - Data structures
 - Standard algorithms and containers
+- Debugging
 - Best practices
 
-The more I leaned, the more refactoring I needed to do. Since the first prototype to this version, I improved the speed by more than 50 time and, believe or not, improved readability. There's much more that can be done to improve the speed, but I think 10 moves is good enough, and I better move on to another project.
+The more I learned, the more refactoring I needed to do. Since the first prototype to this version, I improved the speed by more than 50 times and, believe it or not, improved readability. The fact that I was reinventing the wheel meant the design ended up more complex than it should be. There's much more that can be done to improve the speed, for example: hashing game states, getting rid of recursion and implementing while loops with stacks, redrawing elements on the window only when needed, and rendering in a separate thread to make it smoother. But I think 10 moves is good enough, and I better move on to another project because I've already spent too much time on refactoring.
 
 ### Controls
 - Mouse Left: Select cell
@@ -30,4 +31,4 @@ The more I leaned, the more refactoring I needed to do. Since the first prototyp
 - [Back to Basics](https://www.youtube.com/watch?v=IK4GhjmSC6w&list=PLb4X-oQu9_OGEZaQF4fzbEoREgzXY-DJd), by [CppCon](https://www.youtube.com/@CppCon), YouTube educator.
 
 ### Demo
-[Watch demo.](https://www.youtube.com/watch?v=dXUrjvEJ3Mw)
+[Watch demo.](https://www.youtube.com/watch?v=HgmxzhawZ4w)
