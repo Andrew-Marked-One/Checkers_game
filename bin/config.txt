@@ -1,0 +1,12 @@
+Window 720 480 60  //Width, height, framerate. Parameters of the window. | (int, int, int)
+Assets bin/assets.txt //File path. File that specifies fonts and images. | (string)
+
+SearchDepthLimit 10 10 //White, black. Total amount of moves to search ahead (own and enemy). | (int, int)
+MovementSpeed 3 //Relative movement speed of checker that will be scaled relative to window. | (float)
+RecordLimit 20 //Amount of moves to record. | (int)
+TimeLimit 5000 //Time limit for search in milliseconds. If time runs out, bot might not choose the most optimal move | (int)
+CellColorW 224 224 224 //r, g, b. Color of white cell. | (int, int, int)
+CellColorB 31 31 31 //r, g, b. Color of black cell. | (int, int, int)
+SelectCellColor  246 232 107 //r, g, b. Color of selected cell. | (int, int, int)
+EndCellColor 0 174 35 //r, g, b. Color of a cell that is at the end of a path. | (int, int, int)
+PathCellColor 123 255 32 //r, g, b. Colors of a cell that is on a path to end cell | (int, int, int)

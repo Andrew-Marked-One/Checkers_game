@@ -1,0 +1,12 @@
+Texture BlackPiece     bin/images/BlackPiece.png
+Texture BlackPieceKing bin/images/BlackPieceKing.png
+Texture WhitePiece     bin/images/WhitePiece.png
+Texture WhitePieceKing bin/images/WhitePieceKing.png
+Texture background     bin/images/background.png
+Animation BlackPiece     BlackPiece     1 0
+Animation BlackPieceKing BlackPieceKing 1 0
+Animation WhitePiece     WhitePiece     1 0
+Animation WhitePieceKing WhitePieceKing 1 0
+Animation background     background     1 0
+Font      Roboto bin/fonts/Roboto-Regular.ttf
+Font      Marhey bin/fonts/Marhey-Regular.ttf
