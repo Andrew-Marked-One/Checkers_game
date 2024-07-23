@@ -37,7 +37,7 @@ public:
 class GameStateHist {
 public:
 	std::array<std::array<CStateCell, 8>, 8> allCellsState;
-	std::array<std::array<Entity*, 8>, 8> cellToChecker;
+	std::array<std::array<Entity*, 8>, 8> cellToChecker = {};
 	CheckerAmount checkerAmount;
 	bool isWhitesTurn = true;
 
@@ -56,7 +56,7 @@ public:
 	std::unordered_map<int, std::vector<int>> allEndCells;
 	std::unordered_map<int, std::unordered_map<int, std::vector<Path>>> allPaths;
 	std::array<std::array<CStateCell, 8>, 8> allCellsState;
-	std::vector<Entity*> canMoveCells;
+	std::vector<Entity*> canMoveCells = {};
 	Path path;
 	Entity* selectedCell = nullptr;
 	CheckerAmount checkerAmount;
@@ -69,7 +69,7 @@ class AllPathsSearchResult {
 public:
 	std::unordered_map<int, std::vector<int>> allEndCells;
 	std::unordered_map<int, std::unordered_map<int, std::vector<Path>>> allPaths;
-	std::vector<Entity*> canMoveCells;
+	std::vector<Entity*> canMoveCells = {};
 
 	template<typename T1, typename T2, typename T3>
 	AllPathsSearchResult(T1&& allEndCells_, T2&& allPaths_, T3&& canMoveCells_)
@@ -124,8 +124,8 @@ private:
 
 	//up-left, up-right, down-left, down-right
 	std::array<sf::Vector2i, 4> m_actions = { sf::Vector2i(-1, -1), sf::Vector2i(1, -1), sf::Vector2i(-1, 1), sf::Vector2i(1, 1) };
-	std::array<std::array<Entity*, 8>, 8> m_cells;
-	std::array<std::array<Entity*, 8>, 8> m_cellToChecker;
+	std::array<std::array<Entity*, 8>, 8> m_cells = {};
+	std::array<std::array<Entity*, 8>, 8> m_cellToChecker = {};
 
 	sf::FloatRect m_gridBounds;
 	Vec2 m_gridSize = { 0, 0 };
