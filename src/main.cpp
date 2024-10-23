@@ -2,7 +2,7 @@
 
 
 int main() {
-    GameEngine g("bin/config.txt");
+    GameEngine g("resources/config.txt");
     g.run();
     return 0;
 }

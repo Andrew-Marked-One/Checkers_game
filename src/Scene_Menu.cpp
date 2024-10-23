@@ -139,7 +139,7 @@ void Scene_Menu::initSettings(Vec2 buttonSize, Vec2 buttonPos, float offsetY) {
 	Vec2 backShapePos = { buttonPos.x, buttonPos.y + offsetY };
 
 	Entity* backShape = m_entityManager.addEntity("settings");
-	backShape->addComponent<CTransform>(backShapePos).pos;
+	backShape->addComponent<CTransform>(backShapePos);
 	backShape->addComponent<CShape>(backShapeSize, sf::Color(50, 50, 50), sf::Color(0, 0, 0), -1);
 
 	Vec2 container = { backShapeSize.x * 0.9, buttonSize.y };

@@ -227,7 +227,7 @@ void Scene_Play::initGameOverPrompt() {
 void Scene_Play::initGameOverShape(Vec2 backShapeSize, Vec2 backShapePos) {
 	Entity* backShape = m_entityManager.addEntity("gameOverPrompt");
 	backShape->addComponent<CShape>(backShapeSize, sf::Color(50, 50, 50), sf::Color(0, 0, 0), -1);
-	backShape->addComponent<CTransform>(backShapePos).pos;
+	backShape->addComponent<CTransform>(backShapePos);
 }
 
 void Scene_Play::initGameOverPromptText(Vec2 backShapeSize, Vec2 backShapePos) {
